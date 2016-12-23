@@ -3090,6 +3090,10 @@
     <!-- sequence can be odd, even, first, blank -->
     <!-- position can be left, center, right -->
     <xsl:choose>
+      <xsl:when test="$double.sided = 0 and $position='left'">
+        Copyright 2016 でしぷろんぷと. All Right Reserved.
+      </xsl:when>
+ 
       <xsl:when test="$pageclass = 'titlepage'">
         <!-- nop; no footer on title pages -->
       </xsl:when>

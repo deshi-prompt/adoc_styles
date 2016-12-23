@@ -268,6 +268,11 @@
   <xsl:param name="region.before.extent">10mm</xsl:param> <!-- height of page header -->
   <xsl:param name="region.after.extent">10mm</xsl:param> <!-- height of page footer -->
   <xsl:param name="header.column.widths">1 5 1</xsl:param>
+  <xsl:param name="footer.column.widths">5 1 1</xsl:param>
+  <xsl:attribute-set name="footer.content.properties">
+      <xsl:attribute name="font-family"><xsl:value-of select="$title.fontset"/></xsl:attribute>
+      <xsl:attribute name="font-size">8pt</xsl:attribute>
+  </xsl:attribute-set>
 
   <!--
     Table of Contents
