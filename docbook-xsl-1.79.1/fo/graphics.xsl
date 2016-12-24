@@ -769,8 +769,7 @@
 <xsl:template match="mediaobject/caption|figure/caption">
   <fo:block>
     <xsl:if test="@align = 'right' or @align = 'left' or @align='center'">
-      <xsl:attribute name="text-align"><xsl:value-of
-                         select="@align"/></xsl:attribute>
+      <xsl:attribute name="text-align"><xsl:value-of select="@align"/></xsl:attribute>
     </xsl:if>
     <xsl:apply-templates/>
   </fo:block>

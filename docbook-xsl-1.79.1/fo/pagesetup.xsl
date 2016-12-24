@@ -3096,7 +3096,7 @@
     <!-- position can be left, center, right -->
     <xsl:choose>
       <xsl:when test="$double.sided = 0 and $position='left'">
-        (C) 2016 でしぷろんぷと. Some Parts of Right Reserved.
+        (C) 2016 でしぷろんぷと. Some Rights Reserved.
       </xsl:when>
 
       <xsl:when test="$double.sided = 0 and $position='right'">

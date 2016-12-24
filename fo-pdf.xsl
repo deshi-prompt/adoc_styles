@@ -130,9 +130,9 @@
     <xsl:attribute name="space-before.optimum">0</xsl:attribute>
     <xsl:attribute name="space-before.minimum">0</xsl:attribute>
     <xsl:attribute name="space-before.maximum">0</xsl:attribute>
-    <xsl:attribute name="space-after.optimum">1em</xsl:attribute>
-    <xsl:attribute name="space-after.minimum">0.8em</xsl:attribute>
-    <xsl:attribute name="space-after.maximum">1.2em</xsl:attribute>
+    <xsl:attribute name="space-after.optimum">0.8em</xsl:attribute>
+    <xsl:attribute name="space-after.minimum">0.6em</xsl:attribute>
+    <xsl:attribute name="space-after.maximum">1em</xsl:attribute>
     <!--
     <xsl:attribute name="color"><xsl:value-of select="$text.color"/></xsl:attribute>
     -->
@@ -252,17 +252,17 @@
     Page layout
   -->
 
-  <xsl:param name="paper.type">A4</xsl:param> <!-- alternative size is USletter -->
+  <xsl:param name="paper.type">B5</xsl:param> <!-- alternative size is USletter -->
   <xsl:param name="headers.on.blank.pages">1</xsl:param>
   <xsl:param name="footers.on.blank.pages">1</xsl:param>
-  <xsl:param name="page.margin.top">10mm</xsl:param> <!-- top margin of page -->
-  <xsl:param name="page.margin.bottom">10mm</xsl:param> <!-- top margin of page -->
+  <xsl:param name="page.margin.top">8mm</xsl:param> <!-- top margin of page -->
+  <xsl:param name="page.margin.bottom">8mm</xsl:param> <!-- top margin of page -->
   <xsl:param name="page.margin.inner">20mm</xsl:param> <!-- side margin of page (left, towards binding) -->
   <xsl:param name="page.margin.outer">20mm</xsl:param> <!-- side margin of page (right, away from binding) -->
   <xsl:param name="body.margin.top">15mm</xsl:param> <!-- top margin of content -->
   <xsl:param name="body.margin.bottom">15mm</xsl:param> <!-- bottom margin of content -->
-  <xsl:param name="body.margin.inner">4mm</xsl:param> <!-- side margin of content (left, towards binding) -->
-  <xsl:param name="body.margin.outer">6mm</xsl:param> <!-- side margin of content (right, away from binding) -->
+  <xsl:param name="body.margin.inner">0</xsl:param> <!-- side margin of content (left, towards binding) -->
+  <xsl:param name="body.margin.outer">0</xsl:param> <!-- side margin of content (right, away from binding) -->
   <xsl:param name="body.start.indent">0</xsl:param> <!-- text indentation -->
   <xsl:param name="body.end.indent">0</xsl:param> <!-- text recess from right -->
   <xsl:param name="region.before.extent">10mm</xsl:param> <!-- height of page header -->
@@ -271,7 +271,7 @@
   <xsl:param name="footer.column.widths">5 1 5</xsl:param>
   <xsl:attribute-set name="footer.content.properties">
       <xsl:attribute name="font-family"><xsl:value-of select="$title.fontset"/></xsl:attribute>
-      <xsl:attribute name="font-size">8pt</xsl:attribute>
+      <xsl:attribute name="font-size">7pt</xsl:attribute>
   </xsl:attribute-set>
 
   <!--
