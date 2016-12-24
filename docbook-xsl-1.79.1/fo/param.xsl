@@ -1044,5 +1044,6 @@ set       toc,title
 </xsl:attribute-set>
 <xsl:attribute-set name="dialogue.properties" use-attribute-sets="publishers.properties"/>
 
+
 </xsl:stylesheet>
 

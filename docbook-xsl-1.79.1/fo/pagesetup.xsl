@@ -2747,10 +2747,15 @@
 -->
 
   <fo:block>
-
     <!-- sequence can be odd, even, first, blank -->
     <!-- position can be left, center, right -->
     <xsl:choose>
+      <xsl:when test="$double.sided = 0 and $position='right'">
+        <!-- @takarakasai -->
+        <!-- fo:external-graphic src="images/takarakasai.jpg"/ -->
+        <fo:external-graphic src="images/logo.svg"  content-height="scale-to-fit" width="20"/>
+      </xsl:when>
+ 
       <xsl:when test="$sequence = 'blank'">
         <!-- nothing -->
       </xsl:when>
@@ -3091,7 +3096,12 @@
     <!-- position can be left, center, right -->
     <xsl:choose>
       <xsl:when test="$double.sided = 0 and $position='left'">
-        Copyright 2016 でしぷろんぷと. All Right Reserved.
+        (C) 2016 でしぷろんぷと. Some Parts of Right Reserved.
+      </xsl:when>
+
+      <xsl:when test="$double.sided = 0 and $position='right'">
+        <!-- NG fo:external-graphic src="url('http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png')"/ -->
+        <fo:external-graphic src="../images/commons/80x15.png" content-height="scale-to-fit" height="10"/>
       </xsl:when>
  
       <xsl:when test="$pageclass = 'titlepage'">
