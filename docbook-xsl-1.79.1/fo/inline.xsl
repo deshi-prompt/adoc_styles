@@ -268,7 +268,7 @@
     </xsl:call-template>
   </xsl:param>
 
-  <fo:inline font-weight="bold">
+  <fo:inline font-weight="bold" font-family="{$title.font.family}">
     <xsl:if test="@dir">
       <xsl:attribute name="direction">
         <xsl:choose>
