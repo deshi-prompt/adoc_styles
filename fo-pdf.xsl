@@ -348,6 +348,29 @@
 
   <xsl:attribute-set name="formal.title.properties">
     <xsl:attribute name="color"><xsl:value-of select="$caption.color"/></xsl:attribute>
+    <xsl:attribute name="font-size">
+      <xsl:value-of select="$body.font.master * 1.0"></xsl:value-of>
+      <xsl:text>pt</xsl:text>
+    </xsl:attribute>
+
+    <!-- xsl:attribute name="text-align">right</xsl:attribute -->
+    <xsl:attribute name="text-align">
+      <xsl:choose>
+        <xsl:when test="name(.)='figure'">
+          <xsl:value-of select="mediaobject/imageobject/imagedata/@align"></xsl:value-of>
+        </xsl:when>
+        <xsl:when test="name(.)='table'">
+          center
+        </xsl:when>
+        <xsl:when test="name(.)='blockquote'">
+          left
+        </xsl:when>
+        <xsl:otherwise>
+          left
+          <!-- xsl:value-of select="name(.)"></xsl:value-of -->
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:template match="*" mode="admon.graphic.width">
