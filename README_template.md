@@ -4,7 +4,7 @@ fo-pdf styles for asciidoc.
 
 ## using
 
-- dockbook xsl : http://docbook.sourceforge.net/release/xsl/current/fo/docbook.xsl
+- dockbook xsl : https://sourceforge.net/projects/docbook/files/docbook-xsl/1.79.1/
 
 ## versions
 
